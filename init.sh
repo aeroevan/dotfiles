@@ -1,4 +1,4 @@
 #!/bin/bash
-stow shell
-stow nvim
-stow tmux
+stow -t $HOME shell
+stow -t $HOME nvim
+stow -t $HOME tmux
