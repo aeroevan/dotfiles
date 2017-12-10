@@ -10,7 +10,7 @@ fi
 
 # User specific aliases and functions
 
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/go/bin:$PATH
 
 if [ -f /usr/share/powerline/bash/powerline.sh ]; then
 	powerline-daemon -q
