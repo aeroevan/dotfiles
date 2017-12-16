@@ -21,8 +21,8 @@ if [ -f /usr/share/powerline/bash/powerline.sh ]; then
 	. /usr/share/powerline/bash/powerline.sh
 fi
 
-if [ ! -f /run/user/$(id -u)/gpg-agent.env ]; then
-    killall gpg-agent;
-    eval $(gpg-agent --daemon --enable-ssh-support > /run/user/$(id -u)/gpg-agent.env);
-fi
-source /run/user/$(id -u)/gpg-agent.env
+#if [ ! -f /run/user/$(id -u)/gpg-agent.env ]; then
+#    killall gpg-agent;
+#    eval $(gpg-agent --daemon --enable-ssh-support > /run/user/$(id -u)/gpg-agent.env);
+#fi
+#source /run/user/$(id -u)/gpg-agent.env
