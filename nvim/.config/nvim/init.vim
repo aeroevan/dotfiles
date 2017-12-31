@@ -14,7 +14,7 @@ if dein#load_state('~/.config/nvim/dein')
   " Required:
   call dein#add('~/.config/nvim/dein/repos/github.com/Shougo/dein.vim')
 
-  call dein#add('autozimu/LanguageClient-neovim')
+  call dein#add('autozimu/LanguageClient-neovim', {'build': 'make release'})
   call dein#add('junegunn/fzf')
   call dein#add('Shougo/denite.nvim')
   call dein#add('Shougo/deoplete.nvim')
