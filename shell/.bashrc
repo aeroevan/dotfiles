@@ -12,6 +12,12 @@ fi
 
 export PATH=$HOME/.local/bin:$HOME/go/bin:$PATH
 
+if command -v nvim >/dev/null 2>&1 ; then
+  export EDITOR=nvim
+elif command -v vim >/dev/null 2>&1 ; then
+  export EDITOR=vim
+fi
+
 export JAVA_HOME=$(dirname $(dirname $(dirname $(readlink -f $(which java)))))
 
 if [ -f /usr/share/powerline/bash/powerline.sh ]; then
