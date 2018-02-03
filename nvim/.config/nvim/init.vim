@@ -50,6 +50,7 @@ set hidden
 
 let g:LanguageClient_serverCommands = {
     \ 'python': ['pyls'],
+    \ 'cpp': ['clangd'],
     \ }
 
 " Automatically start language servers.

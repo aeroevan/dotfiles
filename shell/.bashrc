@@ -10,7 +10,7 @@ fi
 
 # User specific aliases and functions
 
-export PATH=$HOME/.local/bin:$HOME/go/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin:$PATH
 
 if command -v nvim >/dev/null 2>&1 ; then
   export EDITOR=nvim
