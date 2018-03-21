@@ -32,3 +32,12 @@ unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
   export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
 fi
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+eval "$(pyenv init -)"
+
+# added by Pew
+source $(pew shell_config)
