@@ -54,6 +54,7 @@ set hidden
 let g:LanguageClient_serverCommands = {
     \ 'python': ['pyls'],
     \ 'cpp': ['clangd'],
+    \ 'c': ['clangd'],
     \ 'rust': ['rls'],
     \ }
 
