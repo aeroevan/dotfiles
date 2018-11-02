@@ -18,7 +18,7 @@ if dein#load_state('~/.config/nvim/dein')
   call dein#add('junegunn/fzf')
   call dein#add('Shougo/denite.nvim')
   call dein#add('Shougo/deoplete.nvim')
-  call dein#add('roxma/nvim-completion-manager')
+  call dein#add('ncm2/ncm2')
   call dein#add('Shougo/echodoc.vim')
   "call dein#add('zchee/deoplete-jedi')
 
@@ -61,9 +61,11 @@ let g:LanguageClient_serverCommands = {
 " Automatically start language servers.
 let g:LanguageClient_autoStart = 1
 
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+" Or map each action separately
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 set background=dark
 let g:gruvbox_italic=1
@@ -71,6 +73,8 @@ colorscheme gruvbox
 
 
 let g:airline_powerline_fonts = 1
+let g:python_host_prog = '/home/evan/.local/share/virtualenvs/neovim2-JJY8v187/bin'
+let g:python3_host_prog = '/home/evan/.local/share/virtualenvs/neovim3--Mrqmd01/bin/python'
 
 set listchars=tab:▸\ ,eol:¬
 set list

@@ -11,6 +11,7 @@ fi
 # User specific aliases and functions
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin:$PATH
+export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig
 
 # rust
 if [ -f $HOME/.cargo/env ]; then
