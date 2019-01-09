@@ -73,8 +73,8 @@ colorscheme gruvbox
 
 
 let g:airline_powerline_fonts = 1
-let g:python_host_prog = '/home/evan/.local/share/virtualenvs/neovim2-JJY8v187/bin'
-let g:python3_host_prog = '/home/evan/.local/share/virtualenvs/neovim3--Mrqmd01/bin/python'
+let g:python_host_prog = '/home/evan/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/home/evan/.pyenv/versions/neovim3/bin/python'
 
 set listchars=tab:▸\ ,eol:¬
 set list
