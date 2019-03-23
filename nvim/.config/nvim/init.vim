@@ -78,5 +78,7 @@ let g:airline_powerline_fonts = 1
 let g:python_host_prog = '/home/evan/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/home/evan/.pyenv/versions/neovim3/bin/python'
 
+let g:vimtex_compiler_progname = 'nvr'
+
 set listchars=tab:▸\ ,eol:¬
 set list
