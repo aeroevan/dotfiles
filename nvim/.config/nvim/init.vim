@@ -30,6 +30,7 @@ if dein#load_state('~/.config/nvim/dein')
   call dein#add('vim-pandoc/vim-pandoc-syntax')
 
   call dein#add('lervag/vimtex')
+  call dein#add('numirias/semshi')
 
   " Required:
   call dein#end()
